@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/html/header :: common-header"/>
+<body>
+<div th:replace="common/html/header :: navbar"/>
+<main>
+    <div class="container" style="margin-top: 20px">
+
+        <!--<div class="row">-->
+        <!--<div class="col-8">-->
+        <!--<h2 class="section-headline"><span>User Account</span></h2>-->
+        <!--</div>-->
+        <!--<div class="col-4">-->
+        <!--&lt;!&ndash;<img src="/img/logo.png" class="img-fluid"/>&ndash;&gt;-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<hr/>-->
+        <div class="row" style="">
+            <div class="col-9 offset-3">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" href="#tab-1" data-toggle="tab" aria-controls="tab-1" aria-selected="true">
+                        <span>Create new account</span> </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab-2" data-toggle="tab" aria-controls="tab-2" aria-selected="false">
+                            <span>Log in</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab-3" data-toggle="tab" aria-controls="tab-3" aria-selected="false">
+                            <span>Forget Password</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--Tab panels-->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-1">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body" style="background-color: #ededed;">
+                                    <form>
+                                        <!--<div class="form-group">-->
+                                        <!--<label for="newEmail">Email</label>-->
+                                        <!--<input required="required" type="text" class="form-control" id="newEmail" name="newEmail"/>-->
+                                        <!--<p style="color:#828282">Enter your email here</p>-->
+                                        <!--</div>-->
+                                        <!--</form>-->
+
+                                        <div class="form-group">
+                                            <label for="newEmail">Email</label>
+                                            <input required="required" type="text" class="form-control" id="newEmail"
+                                                   name="email"/>
+                                            <p style="color:#828282">Enter your email here</p>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Create new account</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-2">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body" style="background-color: #ededed;">
+                                    <form>
+                                        <!--<div class="form-group">-->
+                                        <!--<label for="newEmail">Email</label>-->
+                                        <!--<input required="required" type="text" class="form-control" id="newEmail" name="newEmail"/>-->
+                                        <!--<p style="color:#828282">Enter your email here</p>-->
+                                        <!--</div>-->
+                                        <!--</form>-->
+
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input required="required" type="text" class="form-control" id="email"
+                                                   name="email"/>
+                                            <!--<p style="color:#828282">Enter your email here</p>-->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input required="required" type="password" class="form-control" id="password"
+                                                   name="password"/>
+                                            <!--<p style="color:#828282">password</p>-->
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Log in</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-3">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body" style="background-color: #ededed;">
+                                    <form>
+                                        <!--<div class="form-group">-->
+                                        <!--<label for="newEmail">Email</label>-->
+                                        <!--<input required="required" type="text" class="form-control" id="newEmail" name="newEmail"/>-->
+                                        <!--<p style="color:#828282">Enter your email here</p>-->
+                                        <!--</div>-->
+                                        <!--</form>-->
+
+                                        <div class="form-group">
+                                            <label for="forgotPasswordEmail">Email</label>
+                                            <input required="required" type="text" class="form-control" id="forgotPasswordEmail"
+                                                   name="email"/>
+                                            <p style="color:#828282">Enter your email here</p>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Create new account</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<div th:replace="common/html/header :: body-bottom-scripts"/>
+</body>
+</html>
